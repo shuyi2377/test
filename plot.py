@@ -54,13 +54,13 @@ for fname in files:
     ax.plot(x,y,label='Data')
 
     # Add labels to the x and y axes
-    ax.set_xlabel("X axis")
-    ax.set_ylabel("Y axis")
+    ax.set_xlabel("Time (s)")
+    ax.set_ylabel("Absorption(arb.)")
 
     # Add a title to the graph; by default this is the
     # name of the input data file
     ax.set_title(fname)
-
+    ax.legend()
     # --------------------------------------------------------------------------------------
 
     fig.savefig(splitext(fname)[0]+".png")
